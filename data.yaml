@@ -1,0 +1,20 @@
+path: D:\project\dataset
+train: images/train
+val: images/val
+test: images/test
+
+# 關鍵點設定
+kpt_shape: [4, 3]
+names:
+  0: person
+
+# === 新增這行 ===
+# 定義翻轉時的對應關係。因為脊椎在中線，所以自己對應自己 [0, 1, 2, 3]
+# 如果你有左手右手，這裡就要寫 [0, 2, 1, ...] (左換右)
+flip_idx: [0, 1, 2, 3] 
+
+kpt_names: ["cervical_spine", "thoracic_spine", "lumbar_spine", "sacral_spine"]
+skeleton:
+  - [1, 2]
+  - [2, 3]
+  - [3, 4]

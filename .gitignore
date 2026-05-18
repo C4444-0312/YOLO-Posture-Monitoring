@@ -1,0 +1,15 @@
+# Environments
+.venv/
+env/
+
+# Data and Weights
+dataset/
+archive/
+yolo11s-pose.pt
+
+posture_research/weights/
+posture_research/*.jpg
+posture_research/Box*.png
+posture_research/PoseF1_curve.png
+posture_research/PoseP_curve.png
+posture_research/PoseR_curve.png
