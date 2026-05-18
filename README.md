@@ -32,10 +32,7 @@
 
 - **原始資料集**：Kaggle - [Posture Keypoints Detection](https://www.kaggle.com/datasets/melsmm/posture-keypoints-detection)
 - **資料處理流程**：
-  因原始資料可能存在標籤越界或遮擋標記 (Visibility) 遺失的問題，本專案開發了完整的資料清理管線：
-  1. `修復.py`: 針對 YOLO 格式進行清洗，將座標限制於 `0~1` 之間，並還原關鍵點的 Visibility (0, 1, 2) 屬性。
-  2. `資料檢查.py`: 驗證圖片完整性 (Corrupt Image Check)、標籤欄位格式與類別 ID 防呆機制。
-  3. `資料分割.py`: 將清洗後的資料集自動依 `80% Train`, `10% Val`, `10% Test` 比例劃分。
+  1. `資料分割.py`: 將清洗後的資料集自動依 `80% Train`, `10% Val`, `10% Test` 比例劃分。
 
 ---
 
