@@ -45,6 +45,7 @@
 ├── 資料分割.py      # 訓練/驗證/測試集自動化拆分工具
 ├── data.yaml        # YOLO 訓練所需之資料集設定檔
 └── posture_research/ # 訓練輸出結果 (包含 Loss 曲線、mAP 評估指標)
+```
 
 ## 👨‍💻 我的角色與貢獻 (My Role & Contributions)
 
