@@ -54,3 +54,18 @@
 本專案為團隊協作成果，我於團隊中擔任**核心程式開發 (Core Developer)**，主要負責以下技術實作：
 - **AI 模型與演算法**：撰寫 YOLO11 模型訓練腳本 (`train.py`)，並實作脊椎傾斜角度的數學計算與狀態判定邏輯 (`detector.py`)。
 - **即時推論系統**：整合 OpenCV 串接 WebCam，開發具備高 FPS 且帶有數據視覺化反饋的即時分析儀表板。
+
+## ⚡ 如何執行 (How to Run)
+1. 環境安裝
+請確保已安裝 Python 3.8+，並安裝所需套件：
+
+```bash
+pip install ultralytics opencv-python numpy pillow tqdm
+```
+2. 執行即時偵測
+修改 detector.py 中的 camera_id (預設為 1，筆電內建鏡頭通常為 0)，接著執行：
+
+```bash
+python detector.py
+```
+在畫面中按下 q 即可退出程式。
